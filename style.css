@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+.lightsaber {
+    position: relative;
+    margin-top: 100px;
+}
+.lightsaber img {
+    display: block;
+    height: 200px;
+    width: 200px;
+}
+.plasma {
+    position: absolute;
+    bottom: 160px;
+    left: 94px;
+    border-radius: 12px 12px 0 0; 
+    width: 20px;
+    height: 0px;
+    transition: 0.5s height;
+}
+
+.lightsaber img#verde:hover ~ .plasma {
+    height: 250px;
+    background: #dcebdc;
+    box-shadow: 0px 0px 20px #07df07;
+}
